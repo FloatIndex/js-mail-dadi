@@ -14,7 +14,7 @@ if (currentMail == null || currentMail == '') {
     }
 }
 
-if (access == true) {
+if (access) {
     alert('Accesso Effettuato');
 } else {
     alert('Accesso negato');

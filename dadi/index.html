@@ -5,14 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dadi</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>Lancio del dado</h1>
+    <main>
+        <div id="container">
+            <div id="rounded-box">
+                <h1>Tenta la fortuna!</h1>
 
-    <p id="player-number"></p>
-    <p id="computer-number"></p>
-    <p id="winner"></p>
+                <div id="button-container" onclick="rollTheDice()" onmousedown="visibleLayover()" onmouseup="hiddenLayover()">
+                    <div id="button-layover"></div>
+                    <img id="button-img" src="img/red-btn.png" alt="bottone rosso">
+                </div>
+
+                <div class="dice-container">
+                    <p id="player-number"></p>
+                    <div class="dice-face" id="player-dice-face"></div>
+                </div>
+
+                <div class="dice-container">
+                    <p id="computer-number"></p>
+                    <div class="dice-face" id="computer-dice-face"></div>
+                </div>
+
+                <p id="winner"></p>
+            </div>
+        </div>
+    </main>
     
     <script type="text/javascript" src="main.js"></script>
 </body>
